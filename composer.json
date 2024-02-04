@@ -1,0 +1,22 @@
+{
+    "name": "xel/container",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Xel\\Container\\": "src/"
+        },
+        "files": [
+            "src/Dependency/boot.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Yogi Pratama",
+            "email": "yogipratama.ut@gmail.com"
+        }
+    ],
+    "require": {
+        "php-di/php-di": "^7.0",
+        "friendsofphp/proxy-manager-lts": "^1.0"
+    }
+}

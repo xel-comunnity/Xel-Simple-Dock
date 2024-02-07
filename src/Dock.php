@@ -1,6 +1,8 @@
 <?php
 
 namespace Xel\Container;
+use DI\Container;
+
 class Dock
 {
     private $getter;
@@ -11,7 +13,7 @@ class Dock
     )
     {}
 
-    public function launch()
+    public function launch(): Container
     {
 
         $this->containerBuilder->useAutowiring(true);

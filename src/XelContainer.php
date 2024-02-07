@@ -2,6 +2,7 @@
 
 namespace Xel\Container;
 
+use DI\Container;
 use DI\ContainerBuilder;
 use Exception;
 
@@ -39,7 +40,7 @@ readonly class XelContainer implements ContainerApp
     /**
      * @throws Exception
      */
-    public function build()
+    public function build(): Container
     {
        return $this->containerBuilder->build();
     }
